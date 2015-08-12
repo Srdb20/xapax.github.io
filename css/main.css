@@ -4,6 +4,45 @@
    Author's custom styles
    ========================================================================== */
 
+.main {
+
+min-height: 90vh;
+max-height: 90vh;
+background: -webkit-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* Chrome 10+, Saf5.1+ */
+background:    -moz-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* FF3.6+ */
+background:     -ms-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* IE10 */
+background:      -o-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* Opera 11.10+ */
+background:         linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* W3C */
+        
+}
+
+.headercl {
+height: 10vh;
+border-bottom: #000 1px solid;
+}
+
+.footercl {
+height: 0vh;
+border-top: #000 1px solid;
+}
+
+h1 {
+font-size: 3em;
+
+}
+
+.mainbox {
+	font-family:'Source Sans Pro',Arial,sans-serif;
+	font-weight:300;
+	font-size: 2.5em;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 
 
 
