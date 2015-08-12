@@ -27,21 +27,17 @@ border-top: #000 1px solid;
 }
 
 h1 {
-font-size: 3em;
+font-size: 6em;
 
 }
 
-.mainbox {
+.subtext {
 	font-family:'Source Sans Pro',Arial,sans-serif;
 	font-weight:300;
 	font-size: 2.5em;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
+
 
 
 
