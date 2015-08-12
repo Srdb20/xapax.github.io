@@ -41,15 +41,31 @@ font-size: 6em;
 
 .subtext {
 	font-family:'Source Sans Pro',Arial,sans-serif;
-	font-weight:300;
+	font-weight:100;
 	font-size: 3em;
 }
 
+a {
+	font-family:'Source Sans Pro',Arial,sans-serif;
+	font-weight:300;
+	font-size: 1.5em;
+	color: #333;
+}
 
+a:link {
+text-decoration: none;
+}
 
-
-
-
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+color: #333;
+}
+a:active {
+text-decoration: none;
+}
 
 
 
