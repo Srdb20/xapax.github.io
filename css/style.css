@@ -1,25 +1,3 @@
-/*
-Todo:
-Göra så att övergången mellan olika sektioner är mer smooth. 
-Till exempel genom att använda nått slags opacity-transformation.
-
-http://stackoverflow.com/questions/18441360/on-scroll-change-opacity-of-header
-
-*/
-
-
-/*
-#F2EEB3 - beige
-#ECDFBD - beige2
-#7ACCC8 - blåkrämig
-#9AADBD - gråblå
-#775BA3 - lila
-#F5F5F5 - snygg vit
-#F2F2F2 - anna snygg vit
-#EE4A3E - röd
-	#20DA9B - grön som text
-
-*/
 
 /*
 General
@@ -38,7 +16,6 @@ p {
 Header
 */
 
-
 .header {
 	position: relative;
 	height: 650px;
@@ -55,6 +32,7 @@ Header
 	background-color: rgba(40, 40, 90, 0.7);
   transition: background-color 1s;
 }
+
 .opacity:hover {
 	 background-color: rgba(0, 0, 0, 0.4);
 }
@@ -85,8 +63,6 @@ Header
 	line-height: 60px;
 }
 
-
-
 .first-name {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
@@ -100,20 +76,6 @@ Header
 .menu {
 	list-style: none;
 	padding-left: 0px;
-}
-
-.name {
-	margin: 0px;
-	border: 0px solid white;
-	padding: 10px;
-	border-right: 10px solid white;
-	border-bottom: 10px solid white;
-	transition: border 0.2s;
-}
-
-.name:hover {
-	border-right: 1px solid white;
-	border-bottom: 1px solid white;
 }
 
 .name-header {
@@ -137,7 +99,6 @@ Header
 	border-bottom: 1px solid white;
 }
 
-
 .name-menu {
 	position: absolute;
 	top: 250px;
@@ -147,7 +108,6 @@ Header
 	font-weight: 600;
 	line-height: 44px;
 }
-
 
 .link-me {
 	font-family: 'Lato', sans-serif;
@@ -165,32 +125,25 @@ Header
 	border-radius: 3px;
 }
 
-.name-menu a:hover {
-
-}
-
 .big {
-/*	font-size: 120px;*/
 	font-size: 12vw;
 	font-weight: 900;
 }
 
 .medium {
-/*	font-size: 120px;*/
 	font-size: 10vw;
 	font-weight: 700;
 }
 
 .small {
-/*	font-size: 120px;*/
 	font-size: 9vw;
 	font-weight: 300;
 }
 
-
 /*
 Me
 */
+
 .me {
 position: relative;
 	width: 100%;
@@ -198,22 +151,6 @@ position: relative;
 	background-color: #65BEB4;
 	padding-top: 50px;
 	padding-bottom: 100px;
-}
-
-.section-image {
-	width: 100%;
-	height: 650px;
-
-}
-
-.section-title {
-	text-transform: uppercase;
-	width: 200px;
-	font-size: 100px;
-	color: rgba(255,255,255, 0.9);
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .me-section-title {
@@ -236,7 +173,6 @@ position: relative;
 	margin-top: 50px;
 }
 
-
 hr.sec-hr {
   padding: 0;
   border: none;
@@ -245,6 +181,7 @@ hr.sec-hr {
   text-align: center;
   width: 300px;
 }
+
 hr.sec-hr:after {
   content: "§";
   display: inline-block;
@@ -254,6 +191,7 @@ hr.sec-hr:after {
   padding: 0 0.25em;
   background: #65BEB4;
 }
+
 /*
 Portfolio Section
 */
@@ -264,10 +202,6 @@ Portfolio Section
 	background-color: #F2EEB3;
 	padding-top: 50px;
 	padding-bottom: 150px;
-}
-
-.section-image-port {
-	width: 100%;
 }
 
 .portfolio-title {
@@ -291,19 +225,6 @@ Portfolio Section
 	margin-bottom: 50px;
 }
 
-.row {
-	width: 90%;
-	margin: auto;
-}
-
-.project {
-	width: 20.7%;
-	height: 200px;
-	border: solid 2px black;
-	display: inline-block;
-	margin: 6%;
-}
-
 hr.sec-hr-portfolio {
   padding: 0;
   border: none;
@@ -312,6 +233,7 @@ hr.sec-hr-portfolio {
   text-align: center;
   width: 300px;
 }
+
 hr.sec-hr-portfolio:after {
   content: "§";
   display: inline-block;
@@ -341,55 +263,12 @@ hr.sec-hr-portfolio:after {
 	overflow: hidden;
 }
 
-.flex-item2 {
-	flex-basis: main-size;
-	width: 300px;
-	height: 300px;
-	margin: auto;
-	overflow: hidden;
-}
-
-.flex-item3 {
-	flex-basis: main-size;
-	width: 300px;
-	height: 300px;
-	margin: auto;
-	overflow: hidden;
-}
-
 .ram {
 	border: 10px solid white;
 }
 
 .img-size {
 	width: 100%;
-}
-/*
-Contact
-
-#F2EEB3 - beige
-#ECDFBD - beige2
-#7ACCC8 - blåkrämig
-#9AADBD - gråblå
-#775BA3 - lila
-#F5F5F5 - snygg vit
-#F2F2F2 - anna snygg vit
-#EE4A3E - röd
-	#20DA9B - grön som text
-
-*/
-
-
-.crop {
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-}
-
-.crop img {
-    width: 400px;
-    height: 300px;
-    margin: -75px 0 0 -100px;
 }
 
 /*
@@ -401,24 +280,9 @@ Contact
 	height: 800px;
 }
 
-
 .section-contact {
 	width: 100%;
 	position: relative;
-}
-
-.contact-title {
-	position: absolute;
-	top: 50px;
-	left: 24%;
-	text-transform: uppercase;
-	width: 700px;
-	font-size: 100px;
-	color: #fff;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 50px;
 }
 
 .footer-image {
@@ -434,33 +298,10 @@ Contact
   background-color: rgba(0, 0, 0, 0.1);
   transition: background-color 1s;
 }
+
 .opacity-footer:hover {
 	background-color: rgba(0, 0, 0, 0.4);
 }
-
-.codercrat {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	font-size: 50px;
-	font-weight: 900;
-	color: #F2F2F2;
-	border: 10px 0px 0px 0px solid white;
-	border-left: 0px solid white;
-	border-top: 0px solid white;
-	border-right: 0px solid black;
-	transition: border-left 0.2s, border-right 0.2s, border-top 0.2s, border-bottom 0.2s;
-	width: 400px;
-}
-
-.codercrat:hover {
-	border-left: 10px solid white;
-	border-bottom: 10px solid white;
-	border-top: 10px solid white;
-	border-right: 10px solid white;
-}
-
 
 .name-footer {
 	position: absolute;
@@ -482,7 +323,6 @@ Contact
 	border-right: 1px solid white;
 	border-bottom: 1px solid white;
 }
-
 
 .vertical-line-footer1 {
 	height: 422px;
@@ -530,7 +370,6 @@ Contact
 	font-size: 5.5vw;
 }
 
-
 .social-media-link-github {
 	display: inline-block;
 	border-bottom: 0px solid white;
@@ -575,19 +414,16 @@ Contact
 	border-radius: 5px;
 }
 
-
 @media screen and (max-width: 950px){
 	.vertical-line {
 		display: none;
 	}
-
 	.header-image {
 		height: 100%;
 	}
 	.header {
 		padding: 0px;
 	}
-
 	.vertical-line-footer1{
 		display: none;
 	}
@@ -601,24 +437,20 @@ Contact
 	.header-image {
 		width: auto;
 		height: 100%;
-
 	}
 	.intro-text {
 		display: none;
 	}
-
 	.name-header {
 		top: 150px;
 		right: 50%;
 		margin-right: -168px;
 	}
-
 	.name-menu {
 		top: 300px;
 		right: 50%;
 		margin-right: -88px;
 	}
-	
 	.me-section-title {
 		font-size: 16vw;
 	}
@@ -627,40 +459,30 @@ Contact
 		padding-left: 10%;
 		padding-right: 10%;
 	}
-
 	.portfolio-title {
 		font-size: 16vw;
 	}
-	
 	.projects-text {
 		font-size: 6vw;
 		width: auto;
 		padding-left: 10%;
 		padding-right: 10%;	
 	}
-
 	.outro-text {
 		top: 70px;
 		left: 17%;
 	}
-
 	.name-footer {
 		top: 74px;
 		right: 81px;
 		font-size: 6vw;
 	}
-
 	.social-icons {
 		right: 81px;
 	}
-
-
-
-
 }
 
 @media screen and (max-width: 550px){
-
 	.outro-text {
 		top: 370px;
 		left: 50%;
@@ -669,14 +491,12 @@ Contact
 		line-height: 47px;
 		font-size: 50px;
 	}
-
 	.name-footer {
 		top: 70px;
 		right: 50%;
 		font-size: 58px;
 		margin-right: -168px;
 	}
-
 	.social-icons {
 		top: 150px;
 		right: 50%;
@@ -692,6 +512,4 @@ Contact
 		width: auto;
 		height: 100%;
 	}
-
-
 }
