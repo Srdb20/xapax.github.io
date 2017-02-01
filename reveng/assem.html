@@ -660,6 +660,54 @@
         </pre>
     </div>
 
+    <div class="example15 exercise_section">
+        <h2>Exercise 15</h2>
+        <p class="exercise_color">
+            Compiler: Not compiled. Straight assembly.<br>
+        </p>
+
+        <pre class="assem15">
+            function:
+                push ebp
+                mov ebp, esp
+                mov ebx, [ebp+0x8]
+                mov ecx, [ebp+0xc]
+            loop:
+                cmp ebx, ecx
+                je done
+                cmp ecx, ebx
+                jle else
+                sub ecx,ebx
+                jmp loop
+            else:
+                sub ebx, ecx
+                jmp loop
+
+            done:
+                mov eax,ecx
+                mov esp, ebp
+                pop ebp
+                ret
+        </pre>
+
+        <h3>Solution</h3>
+        <button type="button" name="solution15" class="button solution-button">Show/hide solution</button>
+        <pre class="solution" name="solution15">
+            function(int a, int b)
+            {
+            	while(a != b){
+            		if (b > a)
+            		{
+            			b = b - a;
+            		}
+            		else {
+            			a = a - b;
+            		}
+            	}
+            	return b;
+            }
+        </pre>
+    </div>
 
 
 
