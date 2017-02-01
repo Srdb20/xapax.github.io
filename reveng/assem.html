@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assembly</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Asap|Gloria+Hallelujah|Roboto|VT323" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Reverse Engineering<br>Assembly to C</h1>
+        <h2 class="subtitle"> -- Exercises for n00bs</h2>
+        <p class="introduction-text">
+            If you would like to learn reverse engineering you should check out <a href="http://opensecuritytraining.info/IntroX86.html">OpenSecurityTraining.info</a>. I did the course and it was just awesome. But I felt that I wanted to do some more basic exercises before moving on. I am a firm believer in the power of repetition. I wanted to be able to fast and easy look at assembly and understand what it does. The problem was that when I wrote the code myself I could not reverse it, since I knew it. So instead I compiled so many programs that I couldn't possibily remember them all, and then I created this nice little random-button that gives me random assembly code to reverse. Try it out if you like!
+
+
+        </p>
+        <button type="button" name="random" class="random random-button">Give me a random code snippet!</button>
+    </header>
+
+
+
+
+    <div class="insert_random">
+
+    </div>
+
+    <div class="example1 exercise_section">
+        <h2>Exercise 1</h2>
+
+        <pre class="assem1">
+            00D21000  push        ebp
+            00D21001  mov         ebp,esp
+            00D21003  sub         esp,10h
+            00D21006  mov         dword ptr [ebp-4],3E7h
+            00D2100D  mov         dword ptr [ebp-8],3
+            00D21014  mov         eax,dword ptr [ebp-4]
+            00D21017  cdq
+            00D21018  idiv        eax,dword ptr [ebp-8]
+            00D2101B  mov         dword ptr [ebp-0Ch],eax
+            00D2101E  mov         eax,dword ptr [ebp-0Ch]
+            00D21021  add         eax,32h
+            00D21024  mov         dword ptr [ebp-10h],eax
+            00D21027  mov         eax,dword ptr [ebp-10h]
+            00D2102A  mov         esp,ebp
+            00D2102C  pop         ebp
+            00D2102D  ret
+        </pre>
+
+        <h3>Solution</h3>
+        <button type="button" name="solution1" class="button solution-button">Show/hide solution</button>
+
+        <pre class="solution" name="solution1">
+            main() {
+                int a = 999;
+                int b = 3;
+                int c = a / b;
+                int d = c + 50;
+                return d;
+            }
+        </pre>
+    </div>
+
+    <div class="example2 exercise_section">
+        <h2>Exercise 2</h2>
+        <pre class="assem2">
+            00CB1000  push        ebp
+            00CB1001  mov         ebp,esp
+            00CB1003  sub         esp,0Ch
+            00CB1006  mov         dword ptr [ebp-4],64h
+            00CB100D  mov         dword ptr [ebp-8],0C8h
+            00CB1014  mov         eax,dword ptr [ebp-4]
+            00CB1017  add         eax,dword ptr [ebp-8]
+            00CB101A  mov         dword ptr [ebp-0Ch],eax
+            00CB101D  mov         eax,dword ptr [ebp-0Ch]
+            00CB1020  mov         esp,ebp
+            00CB1022  pop         ebp
+            00CB1023  ret
+        </pre>
+
+        <h3>Solution</h3>
+        <button type="button" name="solution2" class="button solution-button">Show/hide solution</button>
+        <pre class="solution" name="solution2">
+            main() {
+            	int a = 100;
+            	int b = 200;
+            	int c = a + b;
+            	return c;
+            }
+        </pre>
+    </div>
+
+    <div class="example3 exercise_section">
+        <h2>Exercise 3</h2>
+        <pre class="assem3">
+            013D1000  push        ebp
+            013D1001  mov         ebp,esp
+            013D1003  sub         esp,0Ch
+            013D1006  mov         dword ptr [ebp-4],0Ah
+            013D100D  mov         dword ptr [ebp-8],5
+            013D1014  mov         eax,dword ptr [ebp-4]
+            013D1017  cdq
+            013D1018  idiv        eax,dword ptr [ebp-8]
+            013D101B  mov         dword ptr [ebp-0Ch],eax
+            013D101E  mov         eax,dword ptr [ebp-0Ch]
+            013D1021  mov         esp,ebp
+            013D1023  pop         ebp
+            013D1024  ret
+        </pre>
+
+        <h3>Solution</h3>
+        <button type="button" name="solution3" class="button solution-button">Show/hide solution</button>
+        <pre class="solution" name="solution3">
+            main() {
+            	int a = 10;
+            	int b = 5;
+            	int c = a / b;
+            	return c;
+            }
+        </pre>
+    </div>
+</div>
+</body>
+</html>
