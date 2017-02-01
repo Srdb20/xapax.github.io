@@ -42,7 +42,10 @@ h3 {
 
 p {
     font-family: 'Roboto', sans-serif;
+}
 
+.exercise_color {
+    color: #F2EEB3;
 }
 
 .exercise_section {
